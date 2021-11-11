@@ -1,0 +1,16 @@
+.brand-area {
+  .container {
+    border: 1px solid #cccc;
+    border-radius: 25px;
+    .item {
+      img {
+        filter: grayscale(100%);
+        margin: 100px 100px 100px 0;
+        transition: all 0.3s ease;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}

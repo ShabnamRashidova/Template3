@@ -1,0 +1,123 @@
+#hero {
+  background-color: #224362;
+  .hero-item {
+    @include between;
+    .content {
+      padding: 60px 0;
+      color: #fff;
+      text-transform: capitalize;
+      .sub-title {
+        font-size: 18px;
+      }
+      .title {
+        letter-spacing: 1px;
+        font-size: 60px;
+        font-weight: 600;
+      }
+      .hero-btn {
+        width: 240px;
+        height: 65px;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: capitalize;
+        @include center;
+        background: transparent;
+        border: 2px solid #fff;
+        transition: $general-transition;
+        color: #fff;
+        border-radius: 18px;
+        &:hover {
+          background-color: $blue;
+          border-color: $blue;
+        }
+      }
+    }
+    .img-content {
+        padding-top: 60px;
+      margin-right: 140px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $blue;
+        border-radius: 50%;
+        bottom: 0;
+        transform: translateY(50%);
+        width: 470px;
+        z-index: -1;
+        left: -50%;
+        height: 90%;
+      }
+    }
+  }
+
+  @media (max-width: 998px) {
+    .hero-item {
+      .content {
+        .title {
+          font-size: 35px;
+        }
+        .sub-title {
+          font-size: 18px;
+        }
+        .hero-btn{
+            width: 170px;
+            height: 50px;
+            font-size: 16px;
+        }
+      }
+      .img-content{
+          margin-right: 80px;
+          &::after {
+            width: 380px;
+            height: 60%;
+          }
+          img{
+              width: 200px;
+          }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-item {
+      .content {
+        .title {
+          font-size: 30px;
+        }
+        .sub-title {
+          font-size: 16px;
+        }
+        .hero-btn{
+            width: 150px;
+            height: 45px;
+            font-size: 15px;
+        }
+      }
+      .img-content{
+          padding-top: 100px;
+          margin-right: 70px;
+          &::after {
+            content: none;
+          }
+          img{
+              width: 150px;
+          }
+      }
+    }
+  }
+  @media(max-width:576px){
+      
+      
+      .hero-item{
+          
+          flex-direction: column;
+          .content{
+              margin: 0 auto;
+          }
+          .img-content{
+              margin: 0 auto;
+              padding-top: 0;
+          }
+      }}
+  }
+

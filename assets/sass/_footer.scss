@@ -1,0 +1,105 @@
+#footer {
+  .footer-top {
+    background-color: #f2f8f9;
+    padding: 70px 0;
+    .logo {
+      margin-bottom: 24px;
+    }
+    p {
+      line-height: 30px;
+      opacity: 0.9;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .social-link {
+      li {
+        margin-right: 12px;
+        a {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 5px;
+          background-color: $gray;
+          color: #fff;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-3%);
+            background-color:$blue;
+            color: #fff;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .title {
+      text-transform: capitalize;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+       a {
+          text-transform: capitalize;
+          color: #333;
+          font-size: 16px;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $blue;
+            padding-left: 5px;
+          }
+     }
+      }
+    }
+    .contact {
+      ul {
+        li {
+          text-transform: capitalize;
+          color: #333;
+          font-size: 17px;
+          a {
+            &:hover {
+              padding: 0;
+            }
+          }
+          &:nth-child(3) a {
+            text-transform: lowercase;
+          }
+          &:nth-child(4) a {
+            text-transform: lowercase;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background-color: #e2f2ff;
+    padding: 40px 0 20px;
+    display: flex;
+    align-items: end;
+    p {
+      font-weight: 400;
+      font-size: 17px;
+      color: $gray;
+      a {
+        color: $gray;
+        transition: color 0.3s;
+        &:hover {
+          color:  $blue;
+        }
+      }
+      i {
+        margin: 0 6px 0;
+        color: $blue;
+      }
+    }
+  }
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    text-align: center;
+  }
+}
+}

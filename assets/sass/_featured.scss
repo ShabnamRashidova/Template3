@@ -1,0 +1,78 @@
+.feature {
+    .feature-item {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      overflow: hidden;
+      .feature-img {
+        border-right: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img {
+          width: 240px;
+          align-self: center;
+        }
+        &:hover .badge {
+          transform: scale(1);
+        }
+        .badge {
+          align-self: end;
+          margin: 7px 10px 0 0;
+          transform: scale(0);
+          transition: all 0.4s ease;
+          i {
+            font-size: 18px;
+          }
+        }
+      }
+      .top-content {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #ccc;
+        .time {
+          border-radius: 0 30px 30px 0;
+          background-color: $blue;
+          color: #ffff;
+          font-size: 18px;
+          font-weight: 500;
+          display: inline-block;
+          padding: 4px 30px 4px 15px;
+        }
+        h4 {
+          a {
+            font-size: 17px;
+            font-weight: 500;
+            color: #000;
+          }
+        }
+        span {
+          color: #9c9e9c;
+          font-size: 20px;
+          font-weight: 600;
+          del {
+            font-size: 18px;
+            color: #aaa;
+            font-weight: 400;
+          }
+        }
+      }
+      .bottom-content {
+        li {
+          font-size: 16px;
+          color: #000;
+          font-weight: 500;
+          margin: 5px 0;
+          span {
+            font-size: 15px;
+            color: #333;
+          }
+        }
+        i {
+          color: $blue;
+          font-size: 8px;
+          margin-right: 5px;
+          margin-top: -3px;
+        }
+      }
+    }
+  
+}

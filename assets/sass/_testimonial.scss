@@ -1,0 +1,51 @@
+.testimonial{
+    background-color: #F2F8FD;
+ .testimonial-item{
+
+     .text{
+         font-size: 20px;
+         font-style: italic;
+         font-weight: 500;
+         line-height: 1.5;
+         word-spacing: -1px;
+       text-align: left;
+       text-align: justify;
+     }
+     .client{
+         display: flex;
+        
+         .name{
+             margin-left: 20px;
+             align-self: end;
+             line-height: .7;
+          p{
+              &:first-child{
+                  color:$blue;
+                  text-transform: capitalize;
+                  font-weight: 500;
+                  font-size: 18px;
+              }
+              &:last-child{
+                  color:#222;
+                  text-transform: capitalize;
+                  font-weight: 300;
+                  font-size: 15px;
+              }
+          }
+         }
+         .img-content{
+             img{
+                 width: 70px;
+             }
+         }
+     }
+ }
+ @media(max-width:800px){
+     .testimonial-item{
+         padding:0 20px;
+         .text{
+             text-align: left;
+         }
+     }
+ }
+}
